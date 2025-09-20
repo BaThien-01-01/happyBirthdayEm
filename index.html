@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ngọc Hà ♥</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+
+  <div id="countdown">3</div>
+
+<!-- Đưa nút ra ngoài -->
+<button id="replayBtn" class="hidden">Xem tiếp</button>
+
+
+  <!-- Dòng chữ cảm xúc -->
+  <div class="center-text hidden">Xin Chào</div>
+  <div class="center-text hidden">Người đẹp</div>
+  <div class="center-text hidden">Rất vui được biết đến người đẹp</div>
+  <div class="center-text hidden">Chúc Em❤️ ngày sinh nhật thật vui vẻ !!!</div>
+  <div class="center-text hidden">Gửi đến</div>
+  <div class="center-text hidden">Cao Thị Ngọc Hà💗</div>
+  <div class="center-text hidden">Ký tên: Cao Bá Thiên</div>
+
+  <!-- Âm thanh -->
+  <audio id="bgMusic" src="../churoi/e.mp3" preload="auto" loop></audio>
+
+  
+  <!-- Popup xác nhận nhạc -->
+  <div id="musicPopup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Bạn có muốn bật nhạc nền không?</h2>
+      <div class="popup-buttons">
+        <button id="acceptMusic">🎵 Đồng ý</button>
+        <button id="declineMusic">❌ Từ chối</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Nút phát nhạc thủ công nếu bị chặn -->
+  <button id="manualPlayBtn" class="hidden">🔊 Bấm để bật nhạc</button>
+  
+  <iframe id="musicFrame" src="./music.html" style="display:none;"></iframe>
+
+  <script src="./script.js"></script>
+</body>
+</html>
